@@ -16,7 +16,7 @@
                 </Grid.ColumnDefinitions>
                 <Image Source="Resources/Logo.jpg" Width="150" Height="150" Grid.Column="0" Margin="30 15 30 15" HorizontalAlignment="Right"/>
                 <Border Grid.Column="1" Padding="15"  Height="180" HorizontalAlignment="Left">
-                    <Grid>
+                    <Grid x:Name="AuthGrid">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto"></RowDefinition>
                             <RowDefinition Height="Auto"></RowDefinition>
