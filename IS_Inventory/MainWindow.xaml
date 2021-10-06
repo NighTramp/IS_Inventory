@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:IS_Inventory"
         mc:Ignorable="d"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        Title="Инвентаризация" Height="600" Width="800" Icon="Resources/Logo.ico">
+        Title="Инвентаризация"  Height="600" Width="800" MinHeight="600" MinWidth="800" Icon="Resources/Logo.ico" BorderBrush="Black">
+    <Window.Background>
+        <SolidColorBrush Color="White"/>
+    </Window.Background>
     <Grid Background="#161619">
         <Border MinWidth="400" Background="#383838" VerticalAlignment="Center">
             <Grid>
