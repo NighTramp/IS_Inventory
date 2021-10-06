@@ -24,5 +24,10 @@ namespace IS_Inventory
         {
             InitializeComponent();
         }
+
+        private void SignOn_Button_OnClick(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }

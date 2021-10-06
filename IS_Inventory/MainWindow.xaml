@@ -38,7 +38,8 @@
                                          Height="39" Width="300" FontSize="14"/>
                         </Border>
                         <Button Grid.Column="1" Grid.Row="2" Background="#FFDE1A22" Content="Вход" Foreground="White" BorderBrush="#FFDE1A22"
-                                Height="38" FontWeight="Bold" Width="300" HorizontalContentAlignment="Center" Margin="0,20,0,0"/>
+                                Height="38" FontWeight="Bold" Width="300" HorizontalContentAlignment="Center" Margin="0,20,0,0"
+                                x:Name="SignOn_Button" Click="SignOn_Button_OnClick"/>
                     </Grid>
                 </Border>
             </Grid>
