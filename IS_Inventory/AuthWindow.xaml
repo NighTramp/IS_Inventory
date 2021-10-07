@@ -1,0 +1,48 @@
+﻿<Window x:Class="IS_Inventory.AuthWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IS_Inventory"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Инвентаризация"  Height="600" Width="800" MinHeight="600" MinWidth="800" Icon="Resources/Logo.ico" KeyDown="AuthWindow_KeyDown">
+    <Grid Background="#161619">
+        <Border MinWidth="400" Background="#383838" VerticalAlignment="Center">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" MinWidth="250"/>
+                    <ColumnDefinition Width="*" MinWidth="550"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="Resources/Logo.jpg" Width="150" Height="150" Grid.Column="0" Margin="30 15 30 15" HorizontalAlignment="Right"/>
+                <Border Grid.Column="1" Padding="15"  Height="180" HorizontalAlignment="Left">
+                    <Grid x:Name="AuthGrid">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Column="0" Grid.Row="0" Foreground="White" FontFamily="Arial" Margin="10" Content="Имя пользователя:" FontWeight="Bold" FontSize="14"/>
+                        <Label Grid.Column="0" Grid.Row="1" Foreground="White" FontFamily="Arial" Margin="10" Content="Пароль:" FontWeight="Bold" FontSize="14"/>
+                        <Border Grid.Column="1" Grid.Row="0" CornerRadius="3" Background="White" Margin="15 3 15 2">
+                            <TextBox FontFamily="Arial" materialDesign:HintAssist.Hint="Введите логин" Style="{StaticResource MaterialDesignFloatingHintTextBox}" 
+                                     Height="38" Width="300" FontSize="14" x:Name="textBox_Login"/>
+                        </Border>
+                        <Border Grid.Column="1" Grid.Row="1" CornerRadius="3" Background="White" Margin="15 3 15 2">
+                            <PasswordBox FontFamily="Arial" materialDesign:HintAssist.Hint="Введите пароль" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" 
+                                         Height="39" Width="300" FontSize="14" x:Name="textBox_Password"/>
+                        </Border>
+                        <Button Grid.Column="1" Grid.Row="2" Background="#FFDE1A22" Content="Вход" Foreground="White" BorderBrush="#FFDE1A22"
+                                Height="38" FontWeight="Bold" Width="300" HorizontalContentAlignment="Center" Margin="0,20,0,0"
+                                x:Name="SignOn_Button" Click="SignOn_Button_OnClick"/>
+                    </Grid>
+                </Border>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>
