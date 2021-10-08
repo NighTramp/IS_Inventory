@@ -8,17 +8,16 @@ using System.Threading.Tasks;
 
 namespace IS_Inventory
 {
-    class User
+    public class User
     {
-        [Key] 
-        public int u_id { get; set; }
+        [Key] public int u_id { get; set; }
         private string login, password;
         private int primary_role_id, secondary_role_id;
         private bool status;
-
+        
         public string Login
         {
-            get { return login;}
+            get { return login; }
             set { login = value; }
         }
         public string Password
